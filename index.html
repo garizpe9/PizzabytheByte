@@ -8,11 +8,17 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    
+
+
+    <script asnyc defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH8b2F-2xkJ51TqXhss2nFPaX-Lpg32TY&callback=initMap">
+  </script>
 
     <title>Pizza By the Bite</title>
   </head>
   <body>
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
+   <nav class="uk-navbar-container uk-margin" uk-navbar>
       <div class="uk-navbar-left">
         <a class="uk-navbar-item uk-logo" href="#">Pizza By the Bite!</a>
         <div class="uk-navbar-item">
@@ -37,13 +43,9 @@
     </div>
     <div id="pizzmap" style="max-width: 800px;">
       <h2>The Pizza Map:</h2>
-      
+      <div id="map"></div>
 
-      
-        <iframe height="400" width="300" border="0" marginwidth="0" marginheight="0" src="https://www.mapquest.com/embed/search/results?query=Restaurants&queryId=sic:581208&boundingBox=41.96714866531647,-87.80342102050781,41.784113073154536,-87.26097106933594&page=0&center=41.88464303825411,-87.61570930480957&zoom=12&maptype=map"></iframe>
-      
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23755.960296661775!2d-87.62818561073176!3d41.90371574013724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spizza!5e0!3m2!1sen!2sus!4v1596905591076!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      
+
     
     </div>
     <div id="pizzarating" style="max-width: 800px;">

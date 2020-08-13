@@ -15,38 +15,28 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH8b2F-2xkJ51TqXhss2nFPaX-Lpg32TY&callback=initMap">
   </script>
 
-    <title>Pizza By the Bite</title>
+    <title>Pizza By the Byte</title>
   </head>
   <body>
-   <nav class="uk-navbar-container uk-margin" uk-navbar>
-      <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#">Pizza By the Bite!</a>
-        <div class="uk-navbar-item">
-          <form action="javascript:void(0)">
+
             <input
               class="uk-input uk-form-width-small"
               type="text"
               placeholder="Zipcode"
+              id=Zipcodetext
             />
-            <button id="nav_search" class="uk-button uk-button-default">
+            <button
+              id="nav_search"
+              class="uk-button uk-button-default"
+              style="color: white;"
+            >
               Quick Search
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
-    <div>
-      <img
-        src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
-        alt="pizza"
-      />
-    </div>
-    <div id="pizzmap" style="max-width: 800px;">
-      <h2>The Pizza Map:</h2>
-      <div id="map"></div>
 
-
-    
     </div>
     <div id="pizzarating" style="max-width: 800px;">
       <h2>Ratings:</h2>
@@ -55,6 +45,7 @@
       </p>
     </div>
 
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>

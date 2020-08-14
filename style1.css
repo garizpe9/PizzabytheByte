@@ -1,0 +1,38 @@
+.bg-img {
+  background-image: url("https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.685);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.zipnsearch {
+  padding: 20px 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#map {
+  height: 400px;
+  width: 100%;
+
+
+}

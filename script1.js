@@ -6,11 +6,11 @@ var queryURL = "https://api.yelp.com/v3/businesses/search";
 
 $("#nav_search").on("click", somurl);
 
-function somurl() {
+function sumurl() {
   var myurl2 =
     "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=pizza&";
   zip = $("#Zipcodetext").val();
-  parturl = "&location=" + zip;
+  parturl = "&location=" + zip
 
   myurl = myurl2 + parturl;
 
@@ -23,15 +23,15 @@ function somurl() {
     method: "GET",
     dataType: "json",
     success: function (data) {
+      $("#pizzarating").append("<tbody>")
       for (var i = 0; i < 10; i++) {
-        console.log(data.businesses[i].name);
-        console.log(data.businesses[i].price);
-        console.log(data.businesses[i].rating);
-        console.log(data.businesses[i].coordinates);
-        console.log(data);
+        $("#pizzarating").append("<tr>").append("<td id='" + i + "'>")
+        $("#" + (i)).html(data.businesses[i].name + ", " + data.businesses[i].price + ", " + data.businesses[i].rating + ", " + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
       }
-    },
-  });
+      //$("#" + (i)).html(data.businesses[i].name + ", " + data.businesses[i].price + ", " + data.businesses[i].rating + ", " + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
+      //Shonta: if possible when you have time, i would suggest nesting the map in the yelp api and creating lat and long variables to go into your call function
+    }
+  })
 }
 function initMap(){
   var option = {

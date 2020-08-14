@@ -26,15 +26,9 @@
             ><span uk-icon="heart"></span> Pizza By the Byte!
           </a>
           <div class="zipnsearch">
-            <input
-              class="uk-input uk-form-width-small"
-              type="text"
-              placeholder="Zipcode"/>
-              <button
-              id="nav_search"
-              class="uk-button uk-button-default"
-              style="color: white;"
-            >
+
+            <input class="uk-input uk-form-width-small" type="text" placeholder="Zipcode" id="Zipcodetext">
+            <button id="nav_search" class="uk-button uk-button-default" style="color: white;">
               Quick Search
             </button>
       </div>
@@ -47,9 +41,10 @@
     </div>
     <div id="pizzarating" style="max-width: 800px;">
       <h2>Ratings:</h2>
-      <p>
+      <p id=ratings>
         This is where I want to put the ratings from yelp
       </p>
+      
     </div>
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

@@ -4,13 +4,13 @@ var apikey =
 var clientID = "vUaKKoVHSe-3_ow_x9Y19A";
 var queryURL = "https://api.yelp.com/v3/businesses/search";
 
-$("#nav_search").on("click", somurl);
+$("#nav_search").on("click", sumurl);
 
-function somurl() {
+function sumurl() {
   var myurl2 =
     "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=pizza&";
   zip = $("#Zipcodetext").val();
-  parturl = "&location=" + zip;
+  parturl = "&location=" + zip
 
   myurl = myurl2 + parturl;
 
@@ -23,13 +23,14 @@ function somurl() {
     method: "GET",
     dataType: "json",
     success: function (data) {
+      $("#pizzarating").append("<tbody>")
       for (var i = 0; i < 10; i++) {
-        console.log(data.businesses[i].name);
-        console.log(data.businesses[i].price);
-        console.log(data.businesses[i].rating);
-        console.log(data.businesses[i].coordinates);
-        console.log(data);
+        $("#pizzarating").append("<tr>").append("<td id='" + i + "'>")
+        $("#" + (i)).html(data.businesses[i].name + ", " + data.businesses[i].price + ", " + data.businesses[i].rating + ", " + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
       }
-    },
-  });
+      //$("#" + (i)).html(data.businesses[i].name + ", " + data.businesses[i].price + ", " + data.businesses[i].rating + ", " + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
+
+    }
+  })
 }
+

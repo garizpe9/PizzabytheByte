@@ -47,17 +47,18 @@ div#pizzmap {
 }
 
 #ratingsdiv {
-  background-color: rgba(145, 204, 255, 0.555);
+  background-color: rgba(0, 234, 255, 0.801);
   margin: auto;
   margin-top: 20px;
-  border: gray 1px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .wrapper {
   min-height: 100%;
   display: grid;
-  background-color: rgb(44, 44, 44);
+  background-color: rgba(44, 44, 44, 0.76);
   text-align: center;
-  color: white;
-  margin-top: 50px;
+  color: rgb(175, 175, 175);
+  margin-top: 100px;
 }

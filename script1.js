@@ -23,13 +23,23 @@ function sumurl() {
     method: "GET",
     dataType: "json",
     success: function (data) {
-      //$("#pizzarating").append("<tbody>")
       for (var i = 0; i < 10; i++) {
-        $("#pizzarating").append("<tr>").append("<td id='" + i + "'>")
-        $("#" + (i)).html(data.businesses[i].name + ", " + data.businesses[i].price + ", " + data.businesses[i].rating + ", " + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
+        var tBody = $("tbody");
+        var tRow = $("<tr>");
+        var busnam = $("<td>").text(data.businesses[i].name);
+        var busprice = $("<td>").text(data.businesses[i].price);
+        var busrate = $("<td>").text((data.businesses[i].rating)+"/5");
+        var busopen = $("<td>").text(data.businesses[i].is_closed)
+        var busclosed=data.businesses[i].is_closed
+        if (busclosed = true){
+         
+          var busopen = $("<td>").text("Open for pizza!")          
+        }else var busopen = $("<td>").text("Sorry Closed!")
+        tRow.append(busnam,busprice,busrate,busopen);
+        tBody.append(tRow);
+        // + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
       }
-      //$("#" + (i)).html(data.businesses[i].name + ", " + data.businesses[i].price + ", " + data.businesses[i].rating + ", " + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
-      //Shonta: if possible when you have time, i would suggest nesting the map in the yelp api and creating lat and long variables to go into your call function
+      
     }
   })
 }

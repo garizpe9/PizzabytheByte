@@ -35,6 +35,7 @@ function sumurl() {
         var busprice = $("<td>").text(data.businesses[i].price);
         var busrate = $("<td>").text(data.businesses[i].rating + "/5");
         var busopen = $("<td>").text(data.businesses[i].is_closed);
+        
         var busclosed = data.businesses[i].is_closed;
         if ((busclosed = true)) {
           var busopen = $("<td>").text("Open for pizza!");

@@ -34,3 +34,12 @@ function sumurl() {
   })
 }
 
+var googleurl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCWWS-XgxQJjyRBc1Yyi7wAxaep1RJGN4o"
+$.ajax({
+  url: googleurl,
+  method: "GET",
+})
+  .then(function(resp){
+    console.log(resp)
+  })
+

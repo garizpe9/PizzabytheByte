@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css"
-    />
-    <link rel="stylesheet" href="style1.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.6/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="style1.css" />
 
 
 
-    <script asnyc defer
+  <script asnyc defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH8b2F-2xkJ51TqXhss2nFPaX-Lpg32TY&callback=initMap">
-  </script>
+    </script>
 
-    <title>Pizza By the Byte</title>
-  </head>
-  <body>
-    <nav>
-      <div class="bg-img">
-        <div class="topnav">
-    
-          <a class="uk-navbar-item uk-logo" href="index.html"
-            ><span uk-icon="heart"></span> Pizza By the Byte!
-          </a>
-          <div class="zipnsearch">
+  <title>Pizza By the Byte</title>
+</head>
 
-            <input class="uk-input uk-form-width-small" type="text" placeholder="Zipcode" id="Zipcodetext">
-            <button id="nav_search" class="uk-button uk-button-default" style="color: white;">
-              Quick Search
-            </button>
-      </div>
-    </nav>
+<body>
+  <nav>
+    <div class="bg-img">
+      <div class="topnav">
 
-    <div id="pizzmap" style="max-width: 800px;">
-      <h2>Map to nearest pizza place:</h2>
-      <div id="map"></div>
+        <a class="uk-navbar-item uk-logo" href="index.html"><span uk-icon="heart"></span> Pizza By the Byte!
+        </a>
+        <div class="zipnsearch">
 
-    </div>
-    <div id="pizzarating" style="max-width: 800px;">
-      <h2>Ratings:</h2>
-      <p id=ratings>
-        This is where I want to put the ratings from yelp
-      </p>
-      
-    </div>
-    <script src="uikit/dist/js/uikit-icons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
-    <script src="script1.js"></script>
+          <input class="uk-input uk-form-width-small" type="text" placeholder="Zipcode" id="Zipcodetext">
+          <button id="nav_search" class="uk-button uk-button-default" style="color: white;">
+            Quick Search
+          </button>
+        </div>
+  </nav>
 
-  </body>
+  <div id="pizzmap" style="max-width: 800px;">
+    <h2>Map to nearest pizza place:</h2>
+    <div id="map"></div>
+
+  </div>
+  <div style="max-width: 800px;">
+    <table class="uk-table uk-table-divider">
+      <thead>
+          <tr>
+              <th>Pizza Place:</th>
+              <th>Price:</th>
+              <th>Rating:</th>
+              <th>Open/Closed:</th>
+          </tr>
+      </thead>
+      <tbody id = "pizzarating">
+
+      </tbody>
+  </table>
+
+  </div>
+   <script src="uikit/dist/js/uikit-icons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+  <script src="script1.js"></script>
+
+
+</body>
+
 </html>

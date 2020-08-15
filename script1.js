@@ -10,7 +10,7 @@ function sumurl() {
   var myurl2 =
     "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=pizza&";
   zip = $("#Zipcodetext").val();
-  parturl = "&location=" + zip
+  parturl = "&location=" + zip;
 
   myurl = myurl2 + parturl;
 
@@ -28,26 +28,24 @@ function sumurl() {
         var tRow = $("<tr>");
         var busnam = $("<td>").text(data.businesses[i].name);
         var busprice = $("<td>").text(data.businesses[i].price);
-        var busrate = $("<td>").text((data.businesses[i].rating)+"/5");
-        var busopen = $("<td>").text(data.businesses[i].is_closed)
-        var busclosed=data.businesses[i].is_closed
-        if (busclosed = true){
-         
-          var busopen = $("<td>").text("Open for pizza!")          
-        }else var busopen = $("<td>").text("Sorry Closed!")
-        tRow.append(busnam,busprice,busrate,busopen);
+        var busrate = $("<td>").text(data.businesses[i].rating + "/5");
+        var busopen = $("<td>").text(data.businesses[i].is_closed);
+        var busclosed = data.businesses[i].is_closed;
+        if ((busclosed = true)) {
+          var busopen = $("<td>").text("Open for pizza!");
+        } else var busopen = $("<td>").text("Sorry Closed!");
+        tRow.append(busnam, busprice, busrate, busopen);
         tBody.append(tRow);
         // + data.businesses[i].coordinates.latitude + ", " + data.businesses[i].coordinates.longitude)
       }
-      
-    }
-  })
+    },
+  });
 }
-function initMap(){
+function initMap() {
   var option = {
     zoom: 14,
-    center: {lat: 41.8781136, lng:-87.6297982}
-  }
+    center: { lat: 41.8781136, lng: -87.6297982 },
+  };
 
-  var map = new 
-  google.maps.Map(document.getElementById('map'), option);}
+  var map = new google.maps.Map(document.getElementById("map"), option);
+}

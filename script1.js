@@ -30,7 +30,7 @@ function getYelp(zipcode) {
 
 function buildTable(data) {
   $("tbody").empty()
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 20; i++) {
     var tBody = $("tbody");
     var tRow = $("<tr>");
     var busnam = $("<td>").text(data.businesses[i].name);

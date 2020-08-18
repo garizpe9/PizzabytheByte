@@ -1,13 +1,14 @@
 # Pizza by the Byte
 
-This app is for the person who enjoy pizza, but has a conscious mind on price and value.
+This app is for the person who enjoys pizza, but has a conscious mind on price and value.
 
-Pizza by the Byte offers a quick search of your local pizzerias. From a map with street view capabilities, to a breakdown of ratings, price and opperational hours. 
-Simply type in your zipcode at the top and within seconds our app will find 10 pizza parlors in your area.
+Pizza by the Byte offers a quick search of your local pizzerias. 
+Simply input your zipcode at the top and you'll receive two sections of information;
+A map with streetview capabilities of the 10 nearest pizza resturants and a list breakdown of ratings, price and opperational hours.
 
-With our list you could compare resturant values and decide on tonights pizza!
+Compare resturant values and decide on tonights pizza!
 
-Click on the logo to restart page or type a new zipcode for different options.
+Click on the logo to restart the page or type a new zipcode for different options.
 
 Link to demo;
 

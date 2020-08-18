@@ -12,4 +12,4 @@ Click on the logo to restart the page or type a new zipcode for different option
 
 Link to demo;
 
-<iframe src="https://drive.google.com/file/d/1y8ynHXwZvf5aAKei4D56obVq8t3RePSj/preview" width="640" height="480"></iframe>
+https://drive.google.com/file/d/1y8ynHXwZvf5aAKei4D56obVq8t3RePSj/preview

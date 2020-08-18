@@ -81,11 +81,11 @@ function callGoogle(zipcode = "60611") {
           displayMap(response, { lat, lng })
         })
         .catch(function (err) {
-          console.log(err)
+         // console.log(err)
         })
     })
     .catch(function (err) {
-      console.log(err)
+      // console.log(err)
     })
 }
 

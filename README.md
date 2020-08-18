@@ -13,3 +13,9 @@ Click on the logo to restart the page or type a new zipcode for different option
 Link to demo;
 
 https://drive.google.com/file/d/1y8ynHXwZvf5aAKei4D56obVq8t3RePSj/preview
+
+Future plans:
+
+Option to create your own account. With this you'll be able to save your settings and receive special offers in your area.
+
+Taking it above pizza slices. Add an option to choose between 10 popular foods (Ice cream, burgers, sushi, etc) and receiving search and ratings based on that selection.

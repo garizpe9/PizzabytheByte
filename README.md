@@ -21,3 +21,13 @@ Future plans:
 Option to create your own account. With this you'll be able to save your settings and receive special offers in your area.
 
 Taking it above pizza slices. Add an option to choose between 10 popular foods (Ice cream, burgers, sushi, etc) and receiving search and ratings based on that selection.
+
+
+##Something from the team:
+
+Pizza by the Byte was a really fun project and we're very grateful for our team!
+
+We clicked on the concept and immediately began spiliting parts.
+There were lots of challenges in the beginning of working with the API's we chose. Once we figured out how to extract data it was a matter of filtering out what was needed for the site. We considered mobile users in our design and felt like the layout was a good flow for the user. Meeting with TA's and lots of youtube videos were a huge part in our success. Overall this experience has thought us a lot about team work and communication
+
+Amazing project, and we're hoping to be bringing out version 2 in the future!
